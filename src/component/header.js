@@ -137,7 +137,7 @@ export default function PrimarySearchAppBar() {
             <MailIcon />
           </Badge>
         </IconButton>
-        <p>New Heroes</p>
+        <p>New Quirks</p>
       </MenuItem>
       <MenuItem>
         <IconButton aria-label="show 11 new notifications" color="inherit">
@@ -174,7 +174,7 @@ export default function PrimarySearchAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            My Hero Acadamia App
+                     🍛 My Hero Academia 🍚
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>{/* <SearchIcon /> */}</div>

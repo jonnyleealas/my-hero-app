@@ -2,13 +2,10 @@ import { createStore, combineReducers, applyMiddleware } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import thunk from "redux-thunk";
 
-import charReducer from "./charReducer.js";
+import characterReducer from './charReducer';
 
 const reducers = combineReducers({
-  characterCombiner: charReducer
+  characterCombiner: characterReducer
 });
 
-export default createStore(
-  reducers,
-  composeWithDevTools(applyMiddleware(thunk))
-);
+export default createStore(reducers,composeWithDevTools(applyMiddleware(thunk)));

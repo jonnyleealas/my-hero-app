@@ -8,7 +8,7 @@ export default function App() {
   return (
     <Provider store={store}>
       <MobileMenue />
-      <h1>My Hero</h1>
+      <h1>My Hero Academia School Project</h1>
       <StoreFront />
     </Provider>
   );

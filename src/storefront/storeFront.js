@@ -3,15 +3,13 @@ import CharacterDispatcher from './charDispatcher.js';
 
 
 
-function StoreFront(){
+function StoreFront() {
 
-return(
-  <>
-<CharacterDispatcher />
-
-
-  </>
-)
+  return (
+    <>
+      <CharacterDispatcher />
+    </>
+  )
 }
 
 export default StoreFront;
