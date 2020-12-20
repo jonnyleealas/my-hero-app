@@ -6,33 +6,33 @@ import * as actions from "../store/characterActions.js";
 
 
 export default function CharacterDispatcher() {
-  
+
   const dispatch = useDispatch();
 
   const charState = useSelector((state) => state.characterCombiner);
-  console.log('why lord why',charState)
+  console.log('why lord why', charState)
 
 
   // function handleClick(item) {
   //   dispatch(actions.getCharacters(item));
   // }
 
-  useEffect( () => {
+  useEffect(() => {
     dispatch(actions.getCharacters());
   }, []);
 
 
-  return(
+  return (
     <>
       <h2>My Heroes and Quirks </h2>
-        <ul>
-          {charState.map((item)=>
-            <li key={item.id}>
-              {item.name}
-            </li>
-             )}
-        
-        </ul>
+      <ul>
+        {charState.map((item) =>
+          <li key={item.id}>
+            <img src={item.images[0]}></img>
+          </li>
+        )}
+
+      </ul>
     </>
-)
+  )
 }
