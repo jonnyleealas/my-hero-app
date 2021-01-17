@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 
 
-const api = 'https://myheroacademiaapi.com/api/character?quirk=One%20For%20All&affiliation=U.A';
+const api = 'https://myheroacademiaapi.com/api/character';
 export const getCharacters = () => async (dispatch) => {
 
   const response = await axios.get(api);
