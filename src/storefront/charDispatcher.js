@@ -41,10 +41,10 @@ export default function CharacterDispatcher() {
       <ul>
         <Container>
 
-          <Row md={3}>
+          <Row md={4}>
             {charState.map((item) =>
 
-              <Col>
+              <Col style={{Width: '18px'}} md={4}>
 
 
 
